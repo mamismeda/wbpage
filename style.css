@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: rgba(118, 118, 242, 0.663);
+  padding: 50px;
+  text-align: center;
+}
+
+nav{
+    margin-bottom: 50px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+header h4{
+    font-size: 25px;
+    font-family: monospace;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+header h1{
+    color: #fff;
+    font-family: monospace;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+header p{
+    font-size: 20px;
+    font-family: monospace;
+    color: yellow;
+    margin-bottom: 30px;
+    padding: 0 150px;
+    text-transform: capitalize;
+}
+
+.article{
+    font-size: 25px;
+    font-family: monospace;
+    color: #fff;
+}
+
+.clicky{
+    margin:0 30px;
+    background-color: yellow;
+    padding: 7px 15px;
+    border-radius: 15px;
+    color: red;
+    transition: all 0.4s linear;
+}
+
+.clicky:hover{
+    background-color: red;
+    color: yellow;
+}
+
+.pirveli{
+    padding: 50px;
+    border-bottom: 3px solid orange;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box{
+    width: 20%;
+    text-align: center;
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.box h2{
+    margin-bottom: 15px;
+}
+
+.info-container{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info{
+    width: 20%;
+    text-align: center;
+}
+.info p{
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.info a{
+    font-size: 20px;
+    color: orange;
+    font-weight: bold;
+}
+
+.info .logo{
+    margin-bottom: 15px;
+}
+.info .logo i{
+    font-size: 50px;
+    color: blue;
+}
+
+.meore{
+    border-bottom: 3px solid orange;
+}
+
+.gallery-section{
+    padding: 50px;
+}
+
+.galleryh{
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+    color: orange;
+}
+
+.gallery-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.photo{
+    width: 33.33%;
+    padding: 15px; 
+}
+.image img{
+   width: 100%;
+}
+
+@media(max-width:500px){
+       ul{
+        flex-direction: column;
+       }
+
+       ul li{
+        margin: 15px 0;
+       }
+
+       header p{
+        padding: 0;
+       }
+
+       .container{
+        flex-direction: column;
+       }
+       .box{
+        width: 100%;
+       }
+
+       .info-container{
+        flex-direction: column;
+       }
+       .info{
+        width: 100%;
+        margin-bottom: 15px;
+       }
+
+}
